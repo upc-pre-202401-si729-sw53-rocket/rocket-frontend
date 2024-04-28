@@ -144,9 +144,9 @@ a {
         </IconField>
         <ul class="hidden xl:flex list-none p-0 m-0 justify-content-end overflow-hidden">
           <li class="my-auto">
-            <a v-ripple class="flex align-items-center cursor-pointer p-2 mr-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+            <router-link to="/subscriptions"  v-ripple class="flex align-items-center cursor-pointer p-2 mr-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
               <i class="pi pi-crown"></i>
-            </a>
+            </router-link>
           </li>
           <li class="my-auto">
             <a v-ripple class="flex align-items-center cursor-pointer p-2 mr-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
