@@ -13,6 +13,8 @@ import Avatar from 'primevue/avatar';
 import IconField from "primevue/iconfield";
 import InputIcon from "primevue/inputicon";
 import InputText from "primevue/inputtext";
+import Image from "primevue/image";
+import SelectButton from 'primevue/selectbutton';
 
 import Ripple from 'primevue/ripple';
 import Styleclass from 'primevue/styleclass';
@@ -32,6 +34,8 @@ app.component('Avatar', Avatar);
 app.component('IconField', IconField);
 app.component('InputIcon', InputIcon);
 app.component('InputText', InputText);
+app.component('Image', Image);
+app.component('SelectButton', SelectButton);
 
 app.directive('ripple', Ripple);
 app.directive('styleclass', Styleclass);
