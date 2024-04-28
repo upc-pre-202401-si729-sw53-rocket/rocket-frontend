@@ -12,6 +12,10 @@
 .router-link-exact-active {
   text-decoration: none;
 }
+
+a {
+  text-decoration: none;
+}
 </style>
 
 <template>
@@ -21,7 +25,7 @@
         <div class="flex flex-column h-full">
           <div class="flex align-items-center justify-content-between px-6 pt-6 pb-2 flex-shrink-0">
             <span class="inline-flex items-center gap-2">
-              <span class="font-bold text-xl font-italic text-primary">ROCKETNOTES</span>
+                <span class="font-bold text-xl font-italic text-primary">ROCKETNOTES</span>
             </span>
           </div>
           <div class="overflow-y-auto ml-3">
@@ -118,9 +122,13 @@
         <div class="flex justify-content-center mx-auto">
           <div class="flex ">
             <Button icon="pi pi-bars" @click="visible = true" class="menu"/>
-            <div class="align-self-center">
-              <span class="font-bold text-xl font-italic text-primary">ROCKETNOTES</span>
-            </div>
+
+              <div class="align-self-center">
+                <router-link to="/home">
+                  <span class="font-bold text-xl font-italic text-primary">ROCKETNOTES</span>
+                </router-link>
+              </div>
+
           </div>
           <div class="ml-0 sm:ml-8 align-self-center">
             <span class="hidden xl:flex font-semibold text-sm font-italic">Pages/</span>
@@ -151,9 +159,9 @@
             </a>
           </li>
           <li class="my-auto">
-            <a v-ripple class="flex align-items-center cursor-pointer p-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+            <router-link to="/login" v-ripple class="flex align-items-center cursor-pointer p-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
               <Avatar icon="pi pi-user" shape="circle" />
-            </a>
+            </router-link>
           </li>
         </ul>
       </template>
