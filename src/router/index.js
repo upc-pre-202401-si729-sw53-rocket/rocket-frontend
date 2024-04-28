@@ -4,6 +4,7 @@ import RegisterAttendance from "@/public/pages/register-attendance.component.vue
 import Login from "@/public/pages/login.component.vue";
 import SignUp from "@/public/pages/sign-up.component.vue";
 import ResetYourPassword from "@/public/pages/reset-your-password.component.vue";
+import Subscriptions from "@/public/pages/subscriptions.component.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -12,7 +13,8 @@ const router = createRouter({
         { path: '/login', component: Login },
         { path: '/sign-up', component: SignUp },
         { path: '/reset-your-password', component: ResetYourPassword },
-        { path: '/register-attendance', component: RegisterAttendance }
+        { path: '/register-attendance', component: RegisterAttendance },
+        { path: '/subscriptions', component: Subscriptions }
     ]
 });
 
