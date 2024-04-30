@@ -7,6 +7,7 @@ import ResetYourPassword from "@/public/pages/reset-your-password.component.vue"
 import Subscriptions from "@/public/pages/subscriptions.component.vue";
 import HelpAndCenter from "@/public/pages/help-and-center.component.vue";
 import Settings from "@/public/pages/settings.component.vue";
+import GenerateReport from "@/public/pages/generate-report.component.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -18,7 +19,8 @@ const router = createRouter({
         { path: '/register-attendance', component: RegisterAttendance },
         { path: '/subscriptions', component: Subscriptions },
         { path: '/help-and-center', component: HelpAndCenter },
-        { path: '/settings', component: Settings }
+        { path: '/settings', component: Settings },
+        { path: '/infrastructure-report', component: GenerateReport }
     ]
 });
 

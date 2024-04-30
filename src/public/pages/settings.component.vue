@@ -25,7 +25,7 @@ const options = ref(['As a school', 'As a teacher']);
           <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Confirm your password *" type="password" class="py-3" />
         </div>
         <div class="flex buttons">
-          <Button class="w-full justify-content-center px-8 py-3 mr-3">CANCEL</Button>
+          <Button class="w-full justify-content-center px-8 py-3 mr-3 gray-butto">CANCEL</Button>
           <Button class="w-full justify-content-center px-8 py-3 black-button">SAVE</Button>
         </div>
       </form>
@@ -34,4 +34,10 @@ const options = ref(['As a school', 'As a teacher']);
 </template>
 
 <style scoped>
+.gray-button {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+
 </style>
