@@ -1,0 +1,21 @@
+{
+  "classrooms": {
+    "name": "upc-pre-202401-si730-SW53",
+    "image": "https://definicion.de/wp-content/uploads/2008/09/campo-1.jpg",
+    "number-students": 20
+  },
+  "list-students": [
+    {
+      "code": "U202218475",
+      "image": "https://previews.123rf.com/images/robhainer/robhainer1405/robhainer140500003/27998166-niño-feliz-con-traje-que-es-demasiado-grande-para-él.jpg",
+      "name": "John Doe",
+      "class": "G11A"
+    },
+    {
+      "code": "U202218475",
+      "image": "https://marcusluahdivision.com.sg/wp-content/uploads/2021/12/Janet-Chew-Feature-Photo-3-380x422.jpg",
+      "name": "John Doe",
+      "class": "G11A"
+    }
+  ]
+}
