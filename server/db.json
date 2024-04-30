@@ -1,9 +1,26 @@
 {
-  "classrooms": {
-    "name": "upc-pre-202401-si730-SW53",
-    "image": "https://definicion.de/wp-content/uploads/2008/09/campo-1.jpg",
-    "number-students": 20
-  },
+  "classrooms":[
+    {
+      "name": "upc-pre-202401-si730-SW53",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20
+    },
+    {
+      "name": "upc-pre-202401-si730-SW53",
+      "image": "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 31
+    },
+    {
+      "name": "upc-pre-202401-si730-SW53",
+      "image": "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 19
+    },
+    {
+      "name": "upc-pre-202401-si730-SW53",
+      "image": "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 16
+    }
+  ],
   "list-students": [
     {
       "code": "U202218475",
