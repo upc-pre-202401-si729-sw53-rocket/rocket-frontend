@@ -25,10 +25,10 @@ const options = ref(['As a school', 'As a teacher']);
           <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Email address *" class="py-3" />
         </div>
         <div class="flex flex-column pb-2 gap-2">
-          <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Password *" class="py-3" />
+          <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Password *" type="password" class="py-3" />
         </div>
         <div class="flex flex-column pb-5 gap-2">
-          <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Confirm your password *" class="py-3" />
+          <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Confirm your password *" type="password" class="py-3" />
         </div>
         <Button class="w-full justify-content-center px-5 py-3 mb-2">CREATE A NEW ACCOUNT</Button>
         <router-link to="/login">
