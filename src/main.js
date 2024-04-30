@@ -16,6 +16,8 @@ import InputText from "primevue/inputtext";
 import Image from "primevue/image";
 import SelectButton from 'primevue/selectbutton';
 import Dialog from 'primevue/dialog';
+import Accordion from "primevue/accordion";
+import AccordionTab from "primevue/accordiontab";
 
 import Ripple from 'primevue/ripple';
 import Styleclass from 'primevue/styleclass';
@@ -38,6 +40,8 @@ app.component('InputText', InputText);
 app.component('Image', Image);
 app.component('SelectButton', SelectButton);
 app.component('Dialog', Dialog);
+app.component('Accordion', Accordion);
+app.component('AccordionTab', AccordionTab);
 
 app.directive('ripple', Ripple);
 app.directive('styleclass', Styleclass);
