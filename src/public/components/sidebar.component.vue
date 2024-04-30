@@ -44,7 +44,7 @@ a {
                   <li>
                     <router-link to="/register-attendance" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-book mr-2"></i>
-                      <span class="font-medium">Register attendance</span>
+                      <span class="font-medium">Attendance</span>
                     </router-link>
                   </li>
                   <li>
