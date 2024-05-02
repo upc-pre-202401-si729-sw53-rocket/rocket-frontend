@@ -6,7 +6,7 @@
   <section class="flex flex-column items-center pb-8 mb-4 overflow-hidden">
     <section class="flex flex-column items-center min-w-80 sm:w-1/4 p-6 rounded-lg z-10">
       <section class="flex px-8 sm:px-32 mx-auto">
-        <h3 class="black-color mb-2 text-3xl sm:text-5xl font-semibold tracking-tighter text-nowrap">Subscripions</h3>
+        <h3 class="black-color mb-2 text-3xl sm:text-5xl font-semibold tracking-tighter text-nowrap">Subscriptions</h3>
       </section>
     </section>
     <section class="flex mt-1 mx-auto">

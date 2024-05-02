@@ -21,18 +21,134 @@
       "number-students": 16
     }
   ],
-  "list-students": [
+  "facilities-list": [
     {
-      "code": "U202218475",
-      "image": "https://previews.123rf.com/images/robhainer/robhainer1405/robhainer140500003/27998166-niño-feliz-con-traje-que-es-demasiado-grande-para-él.jpg",
-      "name": "John Doe",
-      "class": "G11A"
+      "name": "Main auditorium",
+      "description": "The main auditorium is a large room with a stage and seating for an audience. It is used for concerts, plays, and other performances.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
     },
     {
-      "code": "U202218475",
-      "image": "https://marcusluahdivision.com.sg/wp-content/uploads/2021/12/Janet-Chew-Feature-Photo-3-380x422.jpg",
-      "name": "John Doe",
-      "class": "G11A"
+      "name": "High school playground",
+      "description": "The main auditorium is a large room with a stage and seating for an audience.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },
+    {
+      "name": "Primary school playground",
+      "description": "The main auditorium is a large room with a stage and seating for an audience. It is used for concerts, plays, and other performances.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "Finalized"
+    },
+    {
+      "name": "Building A",
+      "description": "The main auditorium is a large room with a stage and seating for an audience. It is used for concerts, plays, and other performances.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },
+    {
+      "name": "Main auditorium",
+      "description": "The main auditorium is a large room with a stage and seating for an audience.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },
+    {
+      "name": "High school playground",
+      "description": "The main auditorium is a large room with a stage and seating for an audience. It is used for concerts, plays.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },
+    {
+      "name": "Primary school playground",
+      "description": "The main auditorium is a large room with a stage and seating for an audience. It is used for concerts, plays, and other performances.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "Finalized"
+    },
+    {
+      "name": "Building A",
+      "description": "The main auditorium is a large room with a stage and seating for an audience. It is used for concerts, plays, and other performances.",
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    }
+  ],
+  "classroom-equipment-list": [
+    {
+      "equipment": "Student desk",
+      "quantity": 10,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "10 month",
+      "state": "In progress"
+    },
+    {
+      "equipment": "Teacher desk",
+      "quantity": 1,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "9 month",
+      "state": "In progress"
+    },
+    {
+      "equipment": "Whiteboard",
+      "quantity": 1,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },{
+      "equipment": "Student desk",
+      "quantity": 10,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "10 month",
+      "state": "In progress"
+    },
+    {
+      "equipment": "Teacher desk",
+      "quantity": 1,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "9 month",
+      "state": "In progress"
+    },
+    {
+      "equipment": "Whiteboard",
+      "quantity": 1,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },
+    {
+      "equipment": "Whiteboard",
+      "quantity": 1,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "6 month",
+      "state": "In progress"
+    },{
+      "equipment": "Student desk",
+      "quantity": 10,
+      "budget": 1000,
+      "creation": "April 20, 2025",
+      "period": "10 month",
+      "state": "In progress"
     }
   ]
 }
