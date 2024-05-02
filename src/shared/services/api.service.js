@@ -14,6 +14,14 @@ class ApiService {
     getListStudents() {
         return this.api.get('/list-students');
     }
+
+    getListFacilities() {
+        return this.api.get('/facilities-list');
+    }
+
+    getClassroomEquipmentList() {
+        return this.api.get('/classroom-equipment-list');
+    }
 }
 
 export default new ApiService();
