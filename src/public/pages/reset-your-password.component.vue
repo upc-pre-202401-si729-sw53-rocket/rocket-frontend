@@ -19,7 +19,7 @@
           <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="New password *" class="py-3"/>
         </div>
         <div class="flex flex-column gap-2">
-          <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Retry new password *" class="py-3" />
+          <InputText id="username" v-model="value" aria-describedby="username-help" placeholder="Retry new password *" type="password" class="py-3" />
         </div>
         <div class="flex justify-content-between my-3">
           <Button class="px-6 py-3 mr-4">RESET</Button>

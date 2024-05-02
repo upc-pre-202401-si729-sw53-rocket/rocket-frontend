@@ -36,45 +36,39 @@ a {
                 </div>
                 <ul class="list-none p-0 m-0 overflow-hidden">
                   <li>
-                    <router-link to="/home" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                      <i class="pi pi-home mr-2"></i>
-                      <span class="font-medium">Home</span>
+                    <router-link to="/classrooms" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                      <i class="pi pi-building mr-2"></i>
+                      <span class="font-medium">Classrooms</span>
                     </router-link>
                   </li>
                   <li>
-                    <router-link to="/register-attendance" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                      <i class="pi pi-book mr-2"></i>
-                      <span class="font-medium">Register attendance</span>
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/grade-book" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                      <i class="pi pi-address-book mr-2"></i>
-                      <span class="font-medium">Grade book</span>
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/psychological-controls" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                    <router-link to="/all-reports" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-file-excel mr-2"></i>
-                      <span class="font-medium">Psychological controls</span>
+                      <span class="font-medium">All reports</span>
                     </router-link>
                   </li>
                   <li>
-                    <router-link to="/infrastructure-report" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                    <router-link to="/maintenance" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-building-columns mr-2"></i>
-                      <span class="font-medium">Infrastructure report</span>
+                      <span class="font-medium">Maintenance</span>
                     </router-link>
                   </li>
                   <li>
-                    <router-link to="/send-an-email" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                      <i class="pi pi-envelope mr-2"></i>
-                      <span class="font-medium">Send an email</span>
+                    <router-link to="/classroom-setup" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                      <i class="pi pi-users mr-2"></i>
+                      <span class="font-medium">Classroom setup</span>
                     </router-link>
                   </li>
                   <li>
-                    <router-link to="/calendar" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                      <i class="pi pi-calendar mr-2"></i>
-                      <span class="font-medium">Calendar</span>
+                    <router-link to="/students" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                      <i class="pi pi-id-card mr-2"></i>
+                      <span class="font-medium">Students</span>
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link to="/teachers" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                      <i class="pi pi-user mr-2"></i>
+                      <span class="font-medium">Teachers</span>
                     </router-link>
                   </li>
                 </ul>
