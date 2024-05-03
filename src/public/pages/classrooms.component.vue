@@ -27,8 +27,11 @@ export default {
       <template #title>{{ classroom.name }}</template>
       <template #subtitle>{{ classroom['number-students'] }} students in this group</template>
       <template #content>
-        <Button class="ml-8 mr-2">Grade</Button>
-        <Button>Attendance</Button>
+        <div class="flex justify-content-end">
+          <router-link to="/classroom">
+            <Button class ="px-4" label="View"></Button>
+          </router-link>
+        </div>
       </template>
     </Card>
   </section>
