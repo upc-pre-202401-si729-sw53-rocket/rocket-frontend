@@ -24,6 +24,8 @@ import DataTable from "primevue/datatable";
 import Column from "primevue/column";
 import DialogStyle from "primevue/dialog/style/dialogstyle.esm.js";
 import DialogService from "primevue/dialogservice";
+import Dropdown from "primevue/dropdown";
+import MultiSelect from "primevue/multiselect";
 
 import Ripple from 'primevue/ripple';
 import Styleclass from 'primevue/styleclass';
@@ -54,6 +56,8 @@ app.component('DataTable', DataTable);
 app.component('Column', Column);
 app.component('DialogStyle', DialogStyle);
 app.component('DialogService', DialogService);
+app.component('Dropdown', Dropdown);
+app.component('MultiSelect', MultiSelect);
 
 app.directive('ripple', Ripple);
 app.directive('styleclass', Styleclass);

@@ -1,22 +1,22 @@
 {
   "classrooms":[
     {
-      "name": "upc-pre-202401-si730-SW53",
+      "name": "ClassroomA21 - G1A",
       "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "number-students": 20
     },
     {
-      "name": "upc-pre-202401-si730-SW53",
+      "name": "ClassroomA22 - G1B",
       "image": "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "number-students": 31
     },
     {
-      "name": "upc-pre-202401-si730-SW53",
+      "name": "ClassroomA23 - G1C",
       "image": "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "number-students": 19
     },
     {
-      "name": "upc-pre-202401-si730-SW53",
+      "name": "ClassroomA24 - G2A",
       "image": "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "number-students": 16
     }
@@ -149,6 +149,20 @@
       "creation": "April 20, 2025",
       "period": "10 month",
       "state": "In progress"
+    }
+  ],
+  "courses-list": [
+    {
+      "name": "Mathematics",
+      "teacher": "Mr. John Doe",
+      "number-students": 31,
+      "image": "https://cdn.pixabay.com/photo/2023/10/24/06/31/ai-generated-8337510_1280.jpg"
+    },
+    {
+      "name": "English",
+      "teacher": "Mrs. Jane Doe",
+      "number-students": 31,
+      "image": "https://cdn.pixabay.com/photo/2018/09/15/13/28/trainer-3679422_1280.jpg"
     }
   ]
 }

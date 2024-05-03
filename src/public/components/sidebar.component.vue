@@ -36,7 +36,7 @@ a {
                 </div>
                 <ul class="list-none p-0 m-0 overflow-hidden">
                   <li>
-                    <router-link to="/classrooms" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                    <router-link to="/" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-building mr-2"></i>
                       <span class="font-medium">Classrooms</span>
                     </router-link>

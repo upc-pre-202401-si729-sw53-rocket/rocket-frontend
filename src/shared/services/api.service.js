@@ -22,6 +22,10 @@ class ApiService {
     getClassroomEquipmentList() {
         return this.api.get('/classroom-equipment-list');
     }
+
+    getCoursesList() {
+        return this.api.get('/courses-list');
+    }
 }
 
 export default new ApiService();
