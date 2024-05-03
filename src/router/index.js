@@ -8,6 +8,7 @@ import Subscriptions from "@/public/pages/subscriptions.component.vue";
 import HelpAndCenter from "@/public/pages/help-and-center.component.vue";
 import Settings from "@/public/pages/settings.component.vue";
 import GenerateReport from "@/public/pages/generate-report.component.vue";
+import Classroom from "@/public/pages/classroom.component.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -16,7 +17,8 @@ const router = createRouter({
         { path: '/sign-up', component: SignUp },
         { path: '/reset-your-password', component: ResetYourPassword },
 
-        { path: '/classrooms', component: Classrooms },
+        { path: '/', component: Classrooms },
+        { path: '/classroom', component: Classroom },
         { path: '/maintenance', component: Maintenance },
 
         { path: '/subscriptions', component: Subscriptions },
