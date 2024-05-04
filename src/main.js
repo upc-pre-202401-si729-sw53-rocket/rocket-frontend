@@ -27,7 +27,9 @@ import DialogService from "primevue/dialogservice";
 import Dropdown from "primevue/dropdown";
 import MultiSelect from "primevue/multiselect";
 import Checkbox from "primevue/checkbox";
-
+import ColumnGroup from "primevue/columngroup";
+import Row from "primevue/row";
+import Message from "primevue/message";
 import Ripple from 'primevue/ripple';
 import Styleclass from 'primevue/styleclass';
 import router from './router';
@@ -60,6 +62,10 @@ app.component('DialogService', DialogService);
 app.component('Dropdown', Dropdown);
 app.component('MultiSelect', MultiSelect);
 app.component('Checkbox', Checkbox);
+app.component('ColumnGroup', ColumnGroup);
+app.component('Row', Row);
+app.component('Message', Message);
+
 
 app.directive('ripple', Ripple);
 app.directive('styleclass', Styleclass);
