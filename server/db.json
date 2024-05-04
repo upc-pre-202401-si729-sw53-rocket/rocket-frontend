@@ -164,5 +164,97 @@
       "number-students": 31,
       "image": "https://cdn.pixabay.com/photo/2018/09/15/13/28/trainer-3679422_1280.jpg"
     }
+  ],
+  "students-list": [
+    {
+      "name": "John Doe Ramirez",
+      "code": "studentU206518475"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "studentU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "studentU202218435"
+    },
+    {
+      "name": "John Doe Ramirez",
+      "code": "studentU206518475"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "studentU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "studentU202218435"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "studentU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "studentU202218435"
+    },
+    {
+      "name": "John Doe Ramirez",
+      "code": "studentU206518475"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "studentU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "studentU202218435"
+    }
+  ],
+  "teachers-list": [
+    {
+      "name": "John Doe Ramirez",
+      "code": "teacherU206518475"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "teacherU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "teacherU202218435"
+    },
+    {
+      "name": "John Doe Ramirez",
+      "code": "teacherU206518475"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "teacherU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "teacherU202218435"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "teacherU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "teacherU202218435"
+    },
+    {
+      "name": "John Doe Ramirez",
+      "code": "teacherU206518475"
+    },
+    {
+      "name": "Abraham Ayquipa Ubaldo",
+      "code": "teacherU202218657"
+    },
+    {
+      "name": "Hector Manrique Perez",
+      "code": "teacherU202218435"
+    }
   ]
 }
