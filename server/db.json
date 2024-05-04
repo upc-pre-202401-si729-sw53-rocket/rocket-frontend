@@ -3,22 +3,74 @@
     {
       "name": "ClassroomA21 - G1A",
       "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 20
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G1A",
+      "classNumber": "A21"
     },
     {
       "name": "ClassroomA22 - G1B",
       "image": "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 31
+      "number-students": 31,
+      "capacity": 30,
+      "section": "G1B",
+      "classNumber": "A22"
     },
     {
       "name": "ClassroomA23 - G1C",
       "image": "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 19
+      "number-students": 19,
+      "capacity": 30,
+      "section": "G1C",
+      "classNumber": "A23"
     },
     {
       "name": "ClassroomA24 - G2A",
       "image": "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 16
+      "number-students": 16,
+      "capacity": 30,
+      "section": "G2A",
+      "classNumber": "A24"
+    },
+    {
+      "name": "ClassroomA25 - G2B",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G2B",
+      "classNumber": "A25"
+    },
+    {
+      "name": "ClassroomA26 - G2C",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G2C",
+      "classNumber": "A26"
+    },
+    {
+      "name": "ClassroomA27 - G3A",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G3A",
+      "classNumber": "A27"
+    },
+    {
+      "name": "ClassroomA28 - G3B",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G3B",
+      "classNumber": "A28"
+    },
+    {
+      "name": "ClassroomA29 - G3C",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G3C",
+      "classNumber": "A29"
     }
   ],
   "facilities-list": [

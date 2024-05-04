@@ -11,6 +11,7 @@ import GenerateReport from "@/public/pages/generate-report.component.vue";
 import Classroom from "@/public/pages/classroom.component.vue";
 import StudentsList from "@/public/pages/students-list.vue";
 import TeachersList from "@/public/pages/teachers-list.vue";
+import ClassroomSetup from "@/public/pages/classroom-setup.component.vue"; // Asegúrate de que la ruta sea correcta
 
 const router = createRouter({
     history: createWebHistory(),
@@ -24,7 +25,7 @@ const router = createRouter({
         { path: '/maintenance', component: Maintenance },
         { path: '/students', component: StudentsList },
         { path: '/teachers', component: TeachersList },
-
+        { path: '/classroom-setup', component: ClassroomSetup },
         { path: '/subscriptions', component: Subscriptions },
         { path: '/help-and-center', component: HelpAndCenter },
         { path: '/settings', component: Settings },
