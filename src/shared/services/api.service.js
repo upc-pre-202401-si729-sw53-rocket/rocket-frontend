@@ -8,7 +8,7 @@ class ApiService {
     }
 
     getClassrooms() {
-        return this.api.get('/classrooms');
+        return this.api.get('/');
     }
 
     getFacilitiesList() {
