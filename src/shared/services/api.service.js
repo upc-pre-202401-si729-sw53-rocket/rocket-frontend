@@ -3,7 +3,7 @@ import axios from 'axios';
 class ApiService {
     constructor() {
         this.api = axios.create({
-            baseURL: 'http://localhost:3000'
+            baseURL: 'https://rocket-api-mel5.onrender.com/api'
         });
     }
 
