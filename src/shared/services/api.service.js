@@ -11,11 +11,7 @@ class ApiService {
         return this.api.get('/classrooms');
     }
 
-    getListStudents() {
-        return this.api.get('/list-students');
-    }
-
-    getListFacilities() {
+    getFacilitiesList() {
         return this.api.get('/facilities-list');
     }
 
@@ -25,6 +21,14 @@ class ApiService {
 
     getCoursesList() {
         return this.api.get('/courses-list');
+    }
+
+    getStudentsList() {
+        return this.api.get('/students-list');
+    }
+
+    getTeachersList() {
+        return this.api.get('/teachers-list');
     }
 }
 

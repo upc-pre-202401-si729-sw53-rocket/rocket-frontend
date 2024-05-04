@@ -26,6 +26,7 @@ import DialogStyle from "primevue/dialog/style/dialogstyle.esm.js";
 import DialogService from "primevue/dialogservice";
 import Dropdown from "primevue/dropdown";
 import MultiSelect from "primevue/multiselect";
+import Checkbox from "primevue/checkbox";
 
 import Ripple from 'primevue/ripple';
 import Styleclass from 'primevue/styleclass';
@@ -58,6 +59,7 @@ app.component('DialogStyle', DialogStyle);
 app.component('DialogService', DialogService);
 app.component('Dropdown', Dropdown);
 app.component('MultiSelect', MultiSelect);
+app.component('Checkbox', Checkbox);
 
 app.directive('ripple', Ripple);
 app.directive('styleclass', Styleclass);
