@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <section class="flex pl-8 w-full">
+  <section class="flex pl-8  w-full max-w-4xl">
     <Card v-for="(classroom, index) in classrooms" :key="index" class="mt-6 mr-4 border-round-2xl">
       <template #header>
         <img :src="classroom.image" alt="classroom" class="image border-round-top-2xl"/>
@@ -42,5 +42,13 @@ export default {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.max-w-4xl {
+  max-width: 4*300px; 
 }
 </style>
