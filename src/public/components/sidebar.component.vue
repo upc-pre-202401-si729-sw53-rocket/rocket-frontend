@@ -149,7 +149,9 @@ a {
           </li>
           <li class="my-auto">
             <a v-ripple class="flex align-items-center cursor-pointer p-2 mr-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-              <i class="pi pi-sliders-h"></i>
+              <router-link to="/settings">
+                <i class="pi pi-sliders-h"></i>
+              </router-link>
             </a>
           </li>
           <li class="my-auto">
