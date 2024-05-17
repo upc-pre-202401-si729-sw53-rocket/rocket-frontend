@@ -28,7 +28,7 @@ export default {
       <template #subtitle>{{ classroom['number-students'] }} students in this group</template>
       <template #content>
         <div class="flex justify-content-end">
-          <router-link to="/classroom">
+          <router-link to="/admin/classroom">
             <Button class ="px-4" label="View"></Button>
           </router-link>
         </div>

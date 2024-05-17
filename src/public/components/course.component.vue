@@ -45,14 +45,14 @@ onMounted(() => {
       </template>
       <template #title>
         <section class="flex justify-content-between">
-        {{ classroom.name }}
+          {{ classroom.name }}
           <i class="pi pi-trash" @click="visibleDelete = true" />
         </section>
       </template>
-      <template #subtitle>{{ classroom['number-students'] }} students in this group</template>
+      <template #subtitle>teacher: Jose Martinez</template>
       <template #content>
         <div class="flex justify-content-end">
-          <router-link to="/classroom">
+          <router-link to="/admin/course">
             <Button class ="px-4" label="View"></Button>
           </router-link>
         </div>
