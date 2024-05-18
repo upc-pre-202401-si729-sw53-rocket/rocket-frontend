@@ -1,5 +1,6 @@
 <script setup>
 import CourseComponent from "@/public/components/course.component.vue";
+import Sidebar from "@/public/components/sidebar.component.vue";
 import { ref, onMounted } from "vue";
 const visibleCourse = ref(false);
 
@@ -39,6 +40,7 @@ const days = ref([
 </script>
 
 <template>
+  <Sidebar />
   <div class="card flex justify-content-center">
     <Dialog v-model:visible="visibleCourse" modal header="Create a course" :style="{ width: '30vw' }">
       <form>

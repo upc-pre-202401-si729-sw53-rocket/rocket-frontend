@@ -1,7 +1,9 @@
 <script>
 import apiService from '../../shared/services/api.service.js';
+import Sidebar from "@/public/components/sidebar.component.vue";
 
 export default {
+  components: {Sidebar},
   data() {
     return {
       classrooms: null,
@@ -19,6 +21,7 @@ export default {
 </script>
 
 <template>
+  <Sidebar />
   <section class="flex pl-8 w-full">
     <Card v-for="(classroom, index) in classrooms" :key="index" class="mt-6 mr-4 border-round-2xl">
       <template #header>

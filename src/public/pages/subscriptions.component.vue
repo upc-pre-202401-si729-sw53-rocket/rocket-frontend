@@ -1,8 +1,9 @@
 <script setup>
-
+import Sidebar from "@/public/components/sidebar.component.vue";
 </script>
 
 <template>
+  <Sidebar />
   <section class="flex flex-column items-center pb-8 mb-4 overflow-hidden">
     <section class="flex flex-column items-center min-w-80 sm:w-1/4 p-6 rounded-lg z-10">
       <section class="flex px-8 sm:px-32 mx-auto">
@@ -51,13 +52,10 @@
 </template>
 
 <style scoped>
-
-
 :root {
   --green-color: #1EC089;
   --black-color: #595959;
 }
-
 
 .black-color {
   color: var(--black-color);
@@ -65,10 +63,6 @@
 
 .green-color {
   color: var(--green-color);
-}
-
-.card {
-  border: solid 1px rgb(214, 214, 214);
 }
 
 .principal-card {

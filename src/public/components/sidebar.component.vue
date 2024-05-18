@@ -85,11 +85,9 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                           <span class="font-medium">Help & Center</span>
                         </router-link>
                       </li>
-                      <li>
-                        <router-link to="/admin/dark-mode" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                      <li v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                           <i class="pi pi-moon mr-2"></i>
                           <span class="font-medium">Dark mode</span>
-                        </router-link>
                       </li>
                       <li class="mt-8">
                         <router-link to="/admin/log-out" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
@@ -114,7 +112,7 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                     </router-link>
                   </li>
                   <li>
-                    <router-link to="/infrastructure-report" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                    <router-link to="/teacher/infrastructure-report" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-building-columns mr-2"></i>
                       <span class="font-medium">Infrastructure report</span>
                     </router-link>
@@ -148,11 +146,9 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                           <span class="font-medium">Help & Center</span>
                         </router-link>
                       </li>
-                      <li>
-                        <router-link to="/teacher/dark-mode" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                          <i class="pi pi-moon mr-2"></i>
-                          <span class="font-medium">Dark mode</span>
-                        </router-link>
+                      <li v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                        <i class="pi pi-moon mr-2"></i>
+                        <span class="font-medium">Dark mode</span>
                       </li>
                       <li class="mt-8">
                         <router-link to="/teacher/log-out" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
@@ -175,9 +171,7 @@ const isTeacherRoute = () => route.path.includes('/teacher');
           <div class="flex ">
             <Button icon="pi pi-bars" @click="visible = true" class="menu"/>
               <div class="align-self-center">
-                <router-link to="/home">
                   <span class="font-bold text-xl font-italic text-primary">ROCKETNOTES</span>
-                </router-link>
               </div>
           </div>
           <div class="ml-0 sm:ml-8 align-self-center">
