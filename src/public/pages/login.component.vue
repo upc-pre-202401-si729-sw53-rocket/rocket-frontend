@@ -16,7 +16,7 @@ const login = () => {
 </script>
 
 <template>
-  <article class="flex h-full mx-0 sm:mx-8 p-0 sm:p-8 justify-content-between">
+  <article class="flex h-full mx-0 sm:mx-8 p-0 sm:p-8 justify-content-between container">
     <article class="w-50 my-5 sm:my-8 ml-4 sm:ml-8">
       <div class="my-4">
         <span class="inline-flex items-center gap-2">
@@ -55,6 +55,16 @@ const login = () => {
 </template>
 
 <style scoped>
+.container {
+  margin-top: 5em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 12em;
+  }
+}
+
 a {
   text-decoration: none;
 }

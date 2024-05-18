@@ -1,10 +1,12 @@
 <script setup>
+import Sidebar from "@/public/components/sidebar.component.vue";
 import { ref } from 'vue';
 
 const options = ref(['As a school', 'As a teacher']);
 </script>
 
 <template>
+  <Sidebar />
   <section class="flex h-full p-0 sm:p-8">
     <article class="w-50 my-4 sm:my-4 ml-4 sm:ml-8 sm:mx-auto">
       <div class="flex gap-2">
