@@ -1,5 +1,4 @@
 import { createApp } from "vue";
-
 import PrimeVue from 'primevue/config';
 import "primevue/resources/themes/aura-light-green/theme.css";
 import "primeicons/primeicons.css";
@@ -22,13 +21,16 @@ import TabView from 'primevue/tabview';
 import TabPanel from 'primevue/tabpanel';
 import DataTable from "primevue/datatable";
 import Column from "primevue/column";
-import DialogStyle from "primevue/dialog/style/dialogstyle.esm.js";
+import ConfirmDialog from 'primevue/confirmdialog';  
 import DialogService from "primevue/dialogservice";
 import Dropdown from "primevue/dropdown";
 import MultiSelect from "primevue/multiselect";
 import Checkbox from "primevue/checkbox";
-
+import ColumnGroup from "primevue/columngroup";
+import Row from "primevue/row";
 import Ripple from 'primevue/ripple';
+import Calendar from "primevue/calendar";
+import InputNumber from "primevue/inputnumber";
 import Styleclass from 'primevue/styleclass';
 import router from './router';
 
@@ -37,6 +39,7 @@ import App from "./App.vue";
 const app = createApp(App);
 
 app.use(PrimeVue, { ripple: true });
+app.use(DialogService); 
 
 app.component('Button', Button);
 app.component('Card', Card);
@@ -53,14 +56,16 @@ app.component('Accordion', Accordion);
 app.component('AccordionTab', AccordionTab);
 app.component('TabView', TabView);
 app.component('TabPanel', TabPanel);
+app.component('Calendar', Calendar);
+app.component('InputNumber', InputNumber);
 app.component('DataTable', DataTable);
 app.component('Column', Column);
-app.component('DialogStyle', DialogStyle);
-app.component('DialogService', DialogService);
+app.component('ConfirmDialog', ConfirmDialog);  // Registrar ConfirmDialog
 app.component('Dropdown', Dropdown);
 app.component('MultiSelect', MultiSelect);
 app.component('Checkbox', Checkbox);
-
+app.component('ColumnGroup', ColumnGroup);
+app.component('Row', Row);
 app.directive('ripple', Ripple);
 app.directive('styleclass', Styleclass);
 

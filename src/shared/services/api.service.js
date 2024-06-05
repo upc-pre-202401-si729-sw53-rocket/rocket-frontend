@@ -3,12 +3,11 @@ import axios from 'axios';
 class ApiService {
     constructor() {
         this.api = axios.create({
-            baseURL: 'https://rocket-api-mel5.onrender.com/api'
-        });
+            baseURL: 'http://localhost:3000'        });
     }
 
     getClassrooms() {
-        return this.api.get('/');
+        return this.api.get('/classrooms');
     }
 
     getFacilitiesList() {

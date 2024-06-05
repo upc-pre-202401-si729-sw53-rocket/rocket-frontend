@@ -23,6 +23,7 @@ export default {
 <template>
   <Sidebar />
   <section class="flex pl-8 w-full">
+    <div class="classrooms-container">
     <Card v-for="(classroom, index) in classrooms" :key="index" class="mt-6 mr-4 border-round-2xl">
       <template #header>
         <img :src="classroom.image" alt="classroom" class="image border-round-top-2xl"/>
@@ -37,10 +38,22 @@ export default {
         </div>
       </template>
     </Card>
+  </div>
   </section>
 </template>
 
 <style scoped>
+.classrooms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.classroom-card {
+  flex: 1 0 20%; 
+  max-width: 20%; 
+}
+
 .image {
   width: 100%;
   height: 200px;

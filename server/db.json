@@ -3,22 +3,180 @@
     {
       "name": "ClassroomA21 - G1A",
       "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 20
+      "number-students": 20,
+      "student": [
+        {
+          "name": "Rachel Doe",
+          "image": "https://www.mundopsicologos.com/site/article/60606/50895/las-10-cualidades-de-una-persona-mas-valoradas-0_ai1.jpg",
+          "grades": [],
+          "attendance": {
+            "Lunes": true,
+            "Martes": false,
+            "Miercoles": true,
+            "Jueves": false,
+            "Viernes": true
+          }
+        },
+         {
+          "name": "John Wirtz",
+         "image": "https://img.freepik.com/psd-gratis/hombre-expresivo-gesticulando_23-2150198670.jpg",
+         "grades": [],
+         "attendance": {
+          "Lunes": true,
+          "Martes": false,
+          "Miercoles": false,
+          "Jueves": true,
+          "Viernes": true
+        } 
+        },
+         {
+          "name": "Jane Bright",
+          "image": "https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?",
+          "grades": [],
+          "attendance": {
+            "Lunes": true,
+            "Martes": false,
+            "Miercoles": false,
+            "Jueves": false,
+            "Viernes": true
+          } },
+          {
+            "name": "Sofia Sanchez",
+          "image": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg" ,
+          "grades": [],
+          "attendance": {
+            "Lunes": true,
+            "Martes": false,
+            "Miercoles": true,
+            "Jueves": false,
+            "Viernes": false
+          }},
+          {
+            "name": "Leonardo Sarmiento",
+           "image": "https://img.freepik.com/foto-gratis/hombre-moreno-positiva-brazos-cruzados_1187-5797.jpg" ,
+            "grades": [],
+           "attendance": {
+            "Lunes": true,
+            "Martes": true,
+            "Miercoles": true,
+            "Jueves": false,
+            "Viernes": true
+          }},
+          {
+            "name": "Luis Alonso",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFkpxYY-NXZowa8pIlb9HMZ1jpu9FHcLsLWQnrlQDeDk_5w_0SyH-rP2iMZ6hBAzfpDc&usqp=CAU",
+          "grades": [],
+          "attendance": {
+            "Lunes": false,
+            "Martes": true,
+            "Miercoles": true,
+            "Jueves": true,
+            "Viernes": true
+          } },
+          {
+            "name": "Gianfranco Barba",
+         "image": "https://st3.depositphotos.com/3776273/31936/i/450/depositphotos_319362956-stock-photo-man-pointing-showing-copy-space.jpg",
+          "grades": [],
+         "attendance": {
+          "Lunes": true,
+          "Martes": false,
+          "Miercoles": true,
+          "Jueves": true,
+          "Viernes": false
+        } },
+         {
+          "name": "Andrea Calderon",
+          "image": "https://st3.depositphotos.com/2024219/31902/i/450/depositphotos_319025484-stock-photo-young-girl-isolated-background-unhappy.jpg",
+          "grades": [],
+          "attendance": {
+            "Lunes": true,
+            "Martes": false,
+            "Miercoles": true,
+            "Jueves": false,
+            "Viernes": true
+          } }
+        ],
+      "courses": [
+        {
+          "image": "https://www.lavanguardia.com/files/image_449_253/uploads/2022/01/16/61e38e702966d.jpeg",
+          "name": "Mathematics",
+          "description": "John Doe",
+          "schedule": "Monday, Wednesday, Friday 8:00 - 10:00"
+        },
+        {
+          "image": "https://miprofeclases.org.pe/wp-content/uploads/2020/06/Profesor-de-Fisica-en-Lima-1.jpg",
+          "name": "Physics",
+          "description": "Jane Doe",
+          "schedule": "Tuesday, Thursday 8:00 - 10:00"
+        }
+      ],
+      "capacity": 30,
+      "section": "G1A",
+      "classNumber": "A21"
     },
     {
       "name": "ClassroomA22 - G1B",
       "image": "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 31
+      "number-students": 31,
+      "capacity": 30,
+      "section": "G1B",
+      "classNumber": "A22"
     },
     {
       "name": "ClassroomA23 - G1C",
       "image": "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 19
+      "number-students": 19,
+      "capacity": 30,
+      "section": "G1C",
+      "classNumber": "A23"    
     },
     {
       "name": "ClassroomA24 - G2A",
       "image": "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "number-students": 16
+      "number-students": 16,
+      "capacity": 30,
+      "section": "G2A",
+      "classNumber": "A24"
+    },
+    {
+      "name": "ClassroomA25 - G2B",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G2B",
+      "classNumber": "A25"
+    },
+    {
+      "name": "ClassroomA26 - G2C",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G2C",
+      "classNumber": "A26"
+    },
+    {
+      "name": "ClassroomA27 - G3A",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G3A",
+      "classNumber": "A27"
+    },
+    {
+      "name": "ClassroomA28 - G3B",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G3B",
+      "classNumber": "A28"
+    },
+    {
+      "name": "ClassroomA29 - G3C",
+      "image": "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "number-students": 20,
+      "capacity": 30,
+      "section": "G3C",
+      "classNumber": "A29"
     }
   ],
   "facilities-list": [
