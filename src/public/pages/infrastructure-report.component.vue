@@ -1,24 +1,29 @@
 <template>
-      <Sidebar />
-
-  <div class="flex">
-
-    <section class="flex flex-col pl-8 w-full">
-      <div class="header mb-4">
-        <h1 class="text-2xl font-bold">Reports</h1>
-      </div>
-
+  <div>
+    <Sidebar />
+    <section class="flex pl-8 w-full">
       <div class="reports-container">
-        <div v-for="(report, index) in reports" :key="index" class="report-card mt-6 mr-4 p-4 border rounded-lg shadow-sm">
-          <div class="flex justify-between items-center mb-2">
-            <h2 class="font-bold">{{ report.teacherName }}</h2>
-            <i class="pi pi-pen-to-square edit-icon cursor-pointer"></i>
-          </div>
-          <p>{{ report.info }}</p>
-        </div>
+        <table class="table-auto w-full mt-6 border-collapse">
+          <thead>
+          <tr class="bg-gray-200">
+            <th class="px-4 py-2">Id</th>
+            <th class="px-4 py-2">Description</th>
+            <th class="px-4 py-2">Date</th>
+            <th class="px-4 py-2">Teacher id</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr v-for="report in infrastructureReports" :key="report.idInfrastructureReport" class="border-b">
+            <td class="px-4 py-2">{{ report.idInfrastructureReport }}</td>
+            <td class="px-4 py-2">{{ report.description }}</td>
+            <td class="px-4 py-2">{{ report.dateTime }}</td>
+            <td class="px-4 py-2">{{ report.teacherId }}</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
       <div class="flex justify-end mt-4">
-        <button class="add-report-button" @click="showModal = true">Add New Report</button>
+        <Button class="add-report-button" @click="showModal = true">Add New Report</Button>
       </div>
 
       <Dialog v-model:visible="showModal" :modal="true" :closable="false" :draggable="false">
@@ -26,28 +31,13 @@
           <h2>ADD NEW REPORT</h2>
         </template>
         <template #default>
-          <form>
-            <div class="flex flex-column pb-2 gap-2">
-              <InputText id="teacherName" v-model="teacherName" aria-describedby="teacherName-help" placeholder="Teacher Name *" class="py-3"/>
-            </div>
-            <div class="flex flex-column pb-2 gap-2">
-              <InputText id="reportInfo" v-model="reportInfo" aria-describedby="reportInfo-help" placeholder="Report Info *" class="py-3" />
-            </div>
-            <div class="drop-container mb-4">
-              <label for="file-input" class="drop-area flex flex-column align-items-center">
-                <div class="icon mb-3">
-                  <i class="pi pi-upload"></i>
-                </div>
-                Upload image
-                <input type="file" id="file-input" class="file-input mt-3">
-              </label>
-              <div class="preview-container">
-                <img id="preview" alt="Preview" class="preview-image">
-              </div>
+          <form @submit.prevent="saveNewReport">
+            <div v-for="(field, index) in fields" :key="index" class="flex flex-col pb-2 gap-2">
+              <InputText v-model="newReport[field.model]" :placeholder="field.placeholder" class="py-3" />
             </div>
             <div class="flex buttons">
-              <Button class="w-full justify-content-center px-8 py-3 mr-3 gray-button" @click="showModal = false">CANCEL</Button>
-              <Button class="w-full justify-content-center px-8 py-3 black-button" @click="saveReport">SAVE</Button>
+              <Button class="w-full justify-content-center px-8 py-3 mr-3 gray-button" @click="closeModal">CANCEL</Button>
+              <Button class="w-full justify-content-center px-8 py-3 black-button" type="submit">SAVE</Button>
             </div>
           </form>
         </template>
@@ -57,46 +47,92 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref, onMounted} from 'vue';
 import Sidebar from "@/public/components/sidebar.component.vue";
 import Dialog from 'primevue/dialog';
 import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
+import infrastructureReportService from '../services/infrastructure-report.service';
+import axios from 'axios';
 
-const reports = ref([
-  { teacherName: 'Teacher 1', info: 'Report info 1' },
-  { teacherName: 'Teacher 2', info: 'Report info 2' },
-  // ...
-]);
+const infrastructureReports = ref([]);
 
 const showModal = ref(false);
-const teacherName = ref('');
-const reportInfo = ref('');
+const newReport = ref({
+  idInfrastructureReport: '',
+  description: '',
+  dateTime: '',
+  teacherId: ''
+});
 
-const saveReport = () => {
-  if (teacherName.value && reportInfo.value) {
-    reports.value.push({ teacherName: teacherName.value, info: reportInfo.value });
-    teacherName.value = '';
-    reportInfo.value = '';
-    showModal.value = false;
-  } else {
-    alert('Please fill in all required fields.');
-  }
+const fields = [
+  {model: 'idInfrastructureReport', placeholder: 'ID'},
+  {model: 'description', placeholder: 'Description *'},
+  {model: 'dateTime', placeholder: 'Date *'},
+  {model: 'teacherId', placeholder: 'Teacher Id *'}
+];
+
+const fetchReports = () => {
+  infrastructureReportService.getInfrastructureReports()
+      .then(response => {
+        infrastructureReports.value = response.data;
+      })
+      .catch(error => {
+        console.error('Error fetching infrastructure reports:', error);
+      });
 };
+
+const saveNewReport = () => {
+  if (!newReport.value.description || !newReport.value.dateTime || !newReport.value.teacherId) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  axios.post('https://rocket-organize-backend.up.railway.app/api/infrastructure-report', newReport.value, {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+      .then(response => {
+        console.log('Report saved successfully:', response.data);
+        fetchReports();
+        closeModal();
+        Object.keys(newReport.value).forEach(key => newReport.value[key] = '');
+      })
+      .catch(error => {
+        console.error('Error saving report:', error);
+      });
+};
+
+const closeModal = () => {
+  showModal.value = false;
+};
+
+onMounted(fetchReports);
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-top: -300px;
+.table-auto {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-auto th, .table-auto td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-auto th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
 }
 
 .add-report-button {
   height: 40px;
   padding: 0 20px;
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   text-align: center;
@@ -105,68 +141,5 @@ const saveReport = () => {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  margin-left: 500px;
-}
-
-.reports-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: auto;
-  margin-left: 50px;
-}
-
-.report-card {
-  flex: 1 0 100%;
-  max-width: 200%;
-  margin-bottom: 20px; /* Cambiado de -200px a 20px */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.edit-icon {
-  font-size: 24px;
-  margin-left: auto;
-}
-
-.drop-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px dashed #ddd;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.icon {
-  font-size: 24px;
-}
-
-.file-input {
-  display: none;
-}
-
-.preview-container {
-  margin-top: 10px;
-}
-
-.preview-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.gray-button {
-  background-color: gray;
-}
-
-.black-button {
-  background-color: black;
-  color: white;
 }
 </style>

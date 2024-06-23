@@ -1,7 +1,6 @@
 <template>
   <div class="card flex justify-content-center">
-    <!-- Add Teacher Dialog -->
-    <Dialog v-model:visible="visibleAddTeacher" modal header="Add Teacher" :style="{ width: '30vw' }">
+    <Dialog v-model:visible="visibleAddTeacher" modal header="Add student" :style="{ width: '30vw' }">
       <form @submit.prevent="addTeacher">
         <section class="flex flex-column pb-2 gap-2">
           <InputText id="id" v-model="selectedTeacher.id" placeholder="Id *" class="py-3" />
@@ -17,8 +16,6 @@
         </section>
       </form>
     </Dialog>
-
-    <!-- Edit Teacher Dialog -->
     <Dialog v-model:visible="visibleEdit" modal header="Edit Teacher" :style="{ width: '30vw' }">
       <form @submit.prevent="updateTeacher">
         <section class="flex flex-column pb-2 gap-2">
@@ -35,13 +32,11 @@
         </section>
       </form>
     </Dialog>
-
-    <!-- Delete Teacher Dialog -->
     <Dialog v-model:visible="visibleDelete" modal header="Remove Teacher" :style="{ width: '30vw' }">
       <form @submit.prevent="deleteTeacher">
         <section class="flex justify-content-between">
           <p class="m-0">
-            Are you sure you want to delete this teacher? (this action is irreversible)
+            Are you sure you want to delete this student? (this action is irreversible)
           </p>
         </section>
         <section class="flex justify-content-end mt-3">
@@ -54,7 +49,7 @@
 
   <section class="table">
     <section>
-      <h1>Teachers List</h1>
+      <h1>Students List</h1>
     </section>
 
     <section class="my-4">
@@ -63,7 +58,7 @@
           <span class="mr-3">Search</span>
           <InputText id="search" v-model="searchQuery" placeholder="Write something here" class="py-2 pr-8"/>
         </div>
-        <Button label="ADD TEACHER" @click="visibleAddTeacher = true" class="px-4"/>
+        <Button label="ADD STUDENT" @click="visibleAddTeacher = true" class="px-4"/>
       </section>
     </section>
 
