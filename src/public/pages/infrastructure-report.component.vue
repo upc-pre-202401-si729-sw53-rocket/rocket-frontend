@@ -132,7 +132,7 @@ onMounted(fetchReports);
 .add-report-button {
   height: 40px;
   padding: 0 20px;
-  background-color: #4CAF50;
+  background-color: #10b981;
   border: none;
   color: white;
   text-align: center;

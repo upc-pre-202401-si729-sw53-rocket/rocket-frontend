@@ -9,8 +9,11 @@ const router = useRouter();
 const login = () => {
   if (email.value.toLowerCase() === 'admin' && password.value.toLowerCase() === 'admin') {
     router.push('/admin/classrooms');
+    console.log("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhYnJhbmNpdG8iLCJpYXQiOjE3MTkzNTU3MDYsImV4cCI6MTc1MDg5MTcxNSwiYXVkIjoiYWRtaW4iLCJzdWIiOiJhZG1pbiJ9.DZmBVCN3Tc-iCRgWLrJjAQ1Q8YgVaosWMZVRFGnSg-M");
   } else if (email.value.toLowerCase() === 'teacher' && password.value.toLowerCase() === 'teacher') {
     router.push('/teacher/classrooms');
+    console.log("\n" +
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhYnJhbmNpdG8iLCJpYXQiOjE3MTkzNTU3MDYsImV4cCI6MTc1MDg5MTcxNSwiYXVkIjoidGVhY2hlciIsInN1YiI6InRlYWNoZXIifQ.T5nMqw2T54Pi6cOnjCGjGVZ8a5tTrIOW0g6RsyVADn4")
   }
 };
 </script>

@@ -22,10 +22,15 @@ const router = createRouter({
     routes: [
         { path: '/', component: Login },
         { path: '/login', component: Login },
+
+        { path: '/teacher/login', component: Login },
+        { path: '/admin/login', component: Login },
+
         { path: '/sign-up', component: SignUp },
         { path: '/reset-your-password', component: ResetYourPassword },
 
         { path: '/admin/classrooms', component: Classrooms },
+
         /* En esta ruta se almacenan todos los cursos de un salón*/
         { path: '/admin/classroom', component: Classroom },
         { path: '/admin/all-reports', component: AllReports },

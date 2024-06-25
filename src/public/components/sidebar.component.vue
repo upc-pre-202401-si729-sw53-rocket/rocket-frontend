@@ -92,7 +92,7 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                           <span class="font-medium">Dark mode</span>
                       </li>-->
                       <li class="mt-8">
-                        <router-link to="/admin/log-out" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                        <router-link to="/login" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                           <i class="pi pi-sign-out mr-2"></i>
                           <span class="font-medium">Log Out</span>
                         </router-link>
@@ -155,7 +155,7 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                         <span class="font-medium">Dark mode</span>
                       </li>-->
                       <li class="mt-8">
-                        <router-link to="/teacher/log-out" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                        <router-link to="login" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                           <i class="pi pi-sign-out mr-2"></i>
                           <span class="font-medium">Log Out</span>
                         </router-link>
@@ -182,21 +182,6 @@ const isTeacherRoute = () => route.path.includes('/teacher');
             <span class="hidden xl:flex font-semibold text-sm font-italic">Pages/</span>
           </div>
         </div>
-      </template>
-      <template #end>
-        <IconField class="mr-0 sm:mr-4" iconPosition="left">
-          <InputIcon>
-            <i class="pi pi-search mb-4" />
-          </InputIcon>
-          <InputText placeholder="Search"/>
-        </IconField>
-        <ul class="hidden xl:flex list-none p-0 m-0 justify-content-end overflow-hidden">
-          <li class="my-auto">
-            <router-link to="/login" v-ripple class="flex align-items-center cursor-pointer p-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-              <Avatar icon="pi pi-user" shape="circle" />
-            </router-link>
-          </li>
-        </ul>
       </template>
     </Toolbar>
   </div>
