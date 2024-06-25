@@ -38,6 +38,7 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                       <span class="font-medium">All reports</span>
                     </router-link>
                   </li>
+                  <!--
                   <li>
                     <router-link to="/admin/maintenance" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-building-columns mr-2"></i>
@@ -49,7 +50,7 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                       <i class="pi pi-users mr-2"></i>
                       <span class="font-medium">Classroom setup</span>
                     </router-link>
-                  </li>
+                  </li>-->
                   <li>
                     <router-link to="/admin/students" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-id-card mr-2"></i>
@@ -85,10 +86,11 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                           <span class="font-medium">Help & Center</span>
                         </router-link>
                       </li>
+                      <!--
                       <li v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                           <i class="pi pi-moon mr-2"></i>
                           <span class="font-medium">Dark mode</span>
-                      </li>
+                      </li>-->
                       <li class="mt-8">
                         <router-link to="/admin/log-out" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                           <i class="pi pi-sign-out mr-2"></i>
@@ -105,12 +107,13 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                       <span class="font-medium">Teacher classrooms</span>
                     </router-link>
                   </li>
+                  <!--
                   <li>
                     <router-link to="/teacher/excused-departures" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-file-excel mr-2"></i>
                       <span class="font-medium">Excused Departures</span>
                     </router-link>
-                  </li>
+                  </li>-->
                   <li>
                     <router-link to="/teacher/infrastructure-report" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                       <i class="pi pi-building-columns mr-2"></i>
@@ -146,10 +149,11 @@ const isTeacherRoute = () => route.path.includes('/teacher');
                           <span class="font-medium">Help & Center</span>
                         </router-link>
                       </li>
+                      <!--
                       <li v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                         <i class="pi pi-moon mr-2"></i>
                         <span class="font-medium">Dark mode</span>
-                      </li>
+                      </li>-->
                       <li class="mt-8">
                         <router-link to="/teacher/log-out" v-ripple class="router-link-exact-active flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                           <i class="pi pi-sign-out mr-2"></i>
